@@ -8,8 +8,8 @@ env:
   - DJANGO_VERSION=1.8.8
 #Install dependencies
 install:
-  - pip install -q Django==$DJANGO_VERSION --use-mirrors
-  - pip install -r requirements.txt --use-mirrors
+  - pip install -q Django==$DJANGO_VERSION
+  - pip install -r attendance-website/requirements.txt
 #Compile all python files
 script:
   - python -m py_compile attendance-website/autoLogout.py
